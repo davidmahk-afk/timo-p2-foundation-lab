@@ -219,5 +219,8 @@ function renderParent(){let html='<thead><tr><th>Skills</th><th>Family</th><th>R
 $$('.topbtn[data-view]').forEach(b=>b.onclick=()=>setView(b.dataset.view));$('#startSkills').onclick=()=>setView('skills');$('#backBtn').onclick=()=>setView('skills');$('#bilingualBtn').onclick=()=>{state.bilingual=!state.bilingual;updateSettings()};$('#bigTextBtn').onclick=()=>{state.big=!state.big;updateSettings()};$$('.phasebtn').forEach(b=>b.onclick=()=>{state.phase=b.dataset.phase;renderLesson()});
 renderSkills();renderParent();updateSettings();progress();
 </script>
+<script src="spatial-setup.js"></script>
+<script src="spatial-cube.js"></script>
+<script src="spatial-pyramid.js"></script>
 </body>
 </html>
